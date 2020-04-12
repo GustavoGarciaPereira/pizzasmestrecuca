@@ -4,6 +4,6 @@
   "theme_color": "#c40909",
   "background_color": "#2196f3",
   "display": "browser",
-  "scope": "/app/",
+  "scope": "https://gustavogarciapereira.github.io/pizzasmestrecuca/",
   "start_url": "https://gustavogarciapereira.github.io/pizzasmestrecuca/"
 }
