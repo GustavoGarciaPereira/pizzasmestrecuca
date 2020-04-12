@@ -11,65 +11,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <style type="text/css">
-        body {
-			padding:0px;
-			margin:0px;
-		}
 
-		#menu ul {
-			padding:4px;
-			margin:4px;
-			float: left;
-			width: 100%;
-			background-color:#EDEDED;
-			list-style:none;
-			font:100% Tahoma;
-		}
-
-		#menu ul li { display: inline; }
-
-		#menu ul li a {
-			background-color:#EDEDED;
-			color: #333;
-			text-decoration: none;
-			border-bottom:3px solid #EDEDED;
-			padding: 2px 10px;
-			float:left;
-		}
-
-		#menu ul li a:hover {
-			background-color:#D6D6D6;
-			color: #6D6D6D;
-			border-bottom:3px solid #EA0000;
-		}
-	-->
-    .card {
-        display: inline-block;
-        width: 200px;
-        height: 100px;
-        margin: 1em;
-    }
-	</style>
     
     </head>
-    <body>
+    <body style="background-color:#ba131a">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="menu">
-            <ul>
-                <li><a href="">Mestre cuca</a></li>
-                <li><a href="receitas.html">Monte do seu jeito</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="certificado.html">Certificaçãoes</a></li>
-                <li><a href="">Fale Conosco</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mestre cuca <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="receitas.html">Monte do seu jeito <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Produtos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">  
+                        <a class="nav-link" href="certificado.html">Certificaçãoes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Fale Conosco <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <h1>receitas</h1>
-
-        <div class="card" style="width: 18rem;">
+        <h1>Monte do seu jeito</h1>
+<div class="d-flex flex-row row mx-md-n5">
+        <div class="card col py-3 px-md-5 border bg-light" style="width: 18rem;">
             <img class="card-img-top"src="https://media.istockphoto.com/photos/concept-promotional-flyer-and-poster-for-restaurants-or-pizzerias-picture-id943449226?k=6&m=943449226&s=612x612&w=0&h=vZfDYiqWu3sL_edqrQeoRNmSTbhydLptBVTMyekTxqU=" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Massa de Arroz</h5>
@@ -77,7 +51,7 @@
                 <a href="massa_arroz/recheios.html" class="btn btn-primary">Selecionar recheios</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card col py-3 px-md-5 border bg-light" style="width: 18rem;">
             <img class="card-img-top"src="https://media.istockphoto.com/photos/concept-promotional-flyer-and-poster-for-restaurants-or-pizzerias-picture-id943449226?k=6&m=943449226&s=612x612&w=0&h=vZfDYiqWu3sL_edqrQeoRNmSTbhydLptBVTMyekTxqU=" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Massa Milho com Erva Doce</h5>
@@ -85,7 +59,7 @@
                 <a href="#" class="btn btn-primary">Selecionar recheios</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card col py-3 px-md-5 border bg-light" style="width: 18rem;">
             <img class="card-img-top"src="https://media.istockphoto.com/photos/concept-promotional-flyer-and-poster-for-restaurants-or-pizzerias-picture-id943449226?k=6&m=943449226&s=612x612&w=0&h=vZfDYiqWu3sL_edqrQeoRNmSTbhydLptBVTMyekTxqU=" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Pizza de Integral</h5>
@@ -93,6 +67,7 @@
                 <a href="#" class="btn btn-primary">Selecionar recheios</a>
             </div>
         </div>
+    </div>
   
         
         <script src="" async defer></script>
