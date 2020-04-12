@@ -1,0 +1,9 @@
+{
+  "name": "mestrecuca",
+  "short_name": "manoela",
+  "theme_color": "#c40909",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "scope": "/app/",
+  "start_url": "https://gustavogarciapereira.github.io/pizzasmestrecuca/"
+}
