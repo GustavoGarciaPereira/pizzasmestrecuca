@@ -53,12 +53,26 @@
             </ul>
         </div>
     -->
-    <div id="app">
-        {{ message }}
-    </div>
-        <div class="container" >
-            
+    <div class="container" >
+        <div id="app">
+            <h1 v-bind:title="title">{{ message }}</h1>
+
+            <input type="text" v-model="message">    
+            <button v-on:click="contar" class="btn btn-primary" >clique</button>
+            <button v-on:click="retirar_lista" class="btn btn-primary" >retirar</button>
+            <ul>
+                <li style="list-style: none;" v-for="todo in todos">{{ todo.text }}</li>
+            </ul>
+
+            <p>Digite um site para visitar:
+                <a v-bind:href="url" target="true"> {{ url_tex }}</a>
+            </p>
+            <input type="text" v-model="url">
+            <button v-on:click="visitar" class="btn btn-primary" >limpar</button>
         </div>
+
+            
+    </div>
 
         
         
@@ -72,7 +86,27 @@
             var app = new Vue({
                 el: '#app',
                 data: {
-                message: 'Hello Vue!'
+                message: 'Hello Vue!',
+                title:"manoela",
+                url:"",
+                url_tex:"",
+                todos:[
+                    {text:"gustavo"},
+                    {text:"garcia"},
+                    {text:"pereira"},
+                ]
+                },
+                methods:{
+                    contar:function(){
+                        //this.message = "gustavo"
+                        this.todos.push({text:this.message})
+                    },
+                    retirar_lista:function(){
+                        this.todos.pop({text:this.message})
+                    },
+                    visitar:function(){
+                        this.url_tex = this.url
+                    }
                 }
             })
         </script>
