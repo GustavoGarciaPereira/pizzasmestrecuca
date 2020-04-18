@@ -16,10 +16,13 @@
             .form-check-label{
                 color:white;
             }
+            .form-check-label{
+                color:white;
+            }
         </style>
       
       </head>
-      <body style="background-color:#ba131a">
+      <body style="background-color:#ba131a" onload="bem_vindo()"">
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -60,6 +63,10 @@
         <br>
 
         <center>
+            <div>
+                <div id="nome" style="color:aliceblue;"></div>
+            </div>
+        
         <img align="center" height="110px" width="110px" src="https://gustavogarciapereira.github.io/pizzasmestrecuca/img/imagen.jpeg" alt="">
         </center>
         <br>
@@ -72,6 +79,7 @@
           <div class="checkbox">
             <div class="row">
                 <div class="col-4 p-2">
+                    <h6></h6>
 
             <div class="form-check position-static">
                 <input class="form-check-input" type="checkbox" value="Mussarela" id="defaultCheck1">
@@ -187,7 +195,8 @@
 
 
            
-                <div class="col-4 p-2">
+        <div class="col-4 p-2">
+            <h6></h6>
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="Mussarela" id="defaultCheck1">
@@ -399,8 +408,13 @@
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script>
-            function c(){
-                alert("gustavo")
+            function bem_vindo(){
+                variavel = prompt("Oi! Tudo bem? Qual seu nome?")
+                if(variavel == ''){
+                    variavel = "Anônimo";
+                }
+                mensagem = "Olá "+variavel+" qual o recheio da sua pizza hoje?"
+                document.getElementById("nome").innerHTML = mensagem;
             }
         </script>
         </body>
