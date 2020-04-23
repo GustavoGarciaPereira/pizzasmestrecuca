@@ -19,6 +19,22 @@
             .form-check-label{
                 color:white;
             }
+
+            
+
+.center {
+margin: 0 auto;
+width: 200px;
+background: black;
+padding: 20px;
+color: white;
+}
+.centraliza {
+    width: 555px;
+    margin: auto;
+    
+}
+
         </style>
       
       </head>
@@ -388,8 +404,10 @@
 <br>
 <br>
 <br>
-                <a class="btn btn-primary btn-sm" onclick="c()">Cronômetro</a>
+                <!--
+                    <a class="btn btn-primary btn-sm" href="cronometro.html">Cronômetro</a>
                 
+                -->
 
           </div>
 
@@ -438,13 +456,29 @@
       </div>
     </div>
   </div> 
-  <div style="display:block" id="hora">hora</div>
-  <div id="minuto">minuto</div>
-  <div id="segundo">segundo</div>
-  <a class="btn btn-primary btn-sm" onclick="parar()" style="display:block;">parar</a>
-  <a class="btn btn-primary btn-sm" onclick="volta()">volta</a>
-  <a class="btn btn-primary btn-sm" onclick="limpa()">limpa</a>
 
+<div class="centraliza">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center">Cronometro</h5>
+      <p class="card-text">
+          <div class="text-center">
+            <div class="row justify-content-center">
+                <div id="hora">00h</div>
+                <div> : </div>
+                <div id="minuto">00m</div>
+                <div> : </div>
+                <div id="segundo">00s</div>
+              </div>
+          </div>
+
+
+      </p>
+      <a class="btn btn-primary" onclick="tempo(1,0,0)">iniciar</a>
+
+    </div>
+  </div>
+</div>
 
 
           <script src="" async defer></script>
@@ -485,39 +519,30 @@
 
         <script>
             var intervalo;
+            var flat = false;
 
-function tempo(op) {
-    if (op == 1) {
-		document.getElementById('parar').style.display = "block";
-		document.getElementById('comeca').style.display = "none";
-	}
-	var s = 1;
-	var m = 0;
-	var h = 0;
-	intervalo = window.setInterval(function() {
-		if (s == 60) { m++; s = 0; }
-		if (m == 60) { h++; s = 0; m = 0; }
-		if (h < 10) document.getElementById("hora").innerHTML = "0" + h + "h"; else document.getElementById("hora").innerHTML = h + "h";
-		if (s < 10) document.getElementById("segundo").innerHTML = "0" + s + "s"; else document.getElementById("segundo").innerHTML = s + "s";
-		if (m < 10) document.getElementById("minuto").innerHTML = "0" + m + "m"; else document.getElementById("minuto").innerHTML = m + "m";		
-		s++;
-	},1000);
-}
 
-function parar() {
-	window.clearInterval(intervalo);
-	document.getElementById('parar').style.display = "none";
-	document.getElementById('comeca').style.display = "block";
-}
+            var s = 1;
+                var m = 0;
+                var h = 0;
+            function tempo(s,m,h) {
+                if (!flat){
+                    flat = true
 
-function volta() {
-	document.getElementById('voltas').innerHTML += document.getElementById('hora').firstChild.data + "" + document.getElementById('minuto').firstChild.data + "" + document.getElementById('segundo').firstChild.data + "<br>";
-}
+                intervalo = window.setInterval(function() {
+                    if (s == 60) { m++; s = 0; }
+                    if (m == 60) { h++; s = 0; m = 0; }
+                    if (h < 10) document.getElementById("hora").innerHTML = "0" + h + "h"; else document.getElementById("hora").innerHTML = h + "h";
+                    if (s < 10) document.getElementById("segundo").innerHTML = "0" + s + "s"; else document.getElementById("segundo").innerHTML = s + "s";
+                    if (m < 10) document.getElementById("minuto").innerHTML = "0" + m + "m"; else document.getElementById("minuto").innerHTML = m + "m";		
+                    s++;
+                },1000);
+                }
 
-function limpa() {
-	document.getElementById('voltas').innerHTML = "";
-}
-window.onload=tempo;
+            }
+
+
+            
         </script>
         </body>
   </html>
