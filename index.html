@@ -83,7 +83,7 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     //navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js')
-    navigator.serviceWorker.register('/pizzasmestrecuca/sw.js', {scope: '/pizzasmestrecuca/'})
+    navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js', {scope: '/pizzasmestrecuca/'})
         .then((reg) => {
           console.log('Service worker registered.', reg);
         });
