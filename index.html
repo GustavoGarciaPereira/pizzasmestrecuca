@@ -5,15 +5,33 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
         <title>Administração</title>
         <link rel="manifest" href="/manifest.json">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;500&display=swap" rel="stylesheet"> 
         <!-- CODELAB: Add link rel manifest -->
         <link rel="manifest" href="./manifest.json">
+
+        <style>
+            .container{
+                padding-top: 30px;
+            }
+            h2{
+                font-family: 'Laila', serif;
+                font-size: 25px;
+                color: azure;
+            }
+            p{
+                font-family: 'Laila', serif;
+                font-size: 20px;
+                color: azure;
+            }
+        </style>
     </head>
     <body style="background-color:#ba131a">
         <!--[if lt IE 7]>
@@ -36,9 +54,6 @@
                     <li class="nav-item active">  
                         <a class="nav-link" href="certificado.html">Certificações <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Fale Conosco <span class="sr-only">(current)</span></a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -54,6 +69,41 @@
         </div>
     -->
     <div class="container" >
+        <h2>Você já pensou em preparar uma refeição saudável, prática, que seja rápida e do jeitinho que só você entende?</h2>
+        <p></p>
+
+
+        <br>
+
+        <h2>Isso parece impossível pra você? Você acha que comer de forma saudável não tem como ser do seu jeito e prático? Preparar comida em casa leva muito tempo?</h2>
+
+        <br>
+
+        <h2>Então você precisa conhecer os kits para pizza Mestre Cuca!!!</h2>
+
+        <br>
+
+        <p>São vários tipos de massa e recheios, semi-prontos, que você tem a liberdade de escolher quais quiser e ao chegar em casa apenas precisa colocar os recheios na massa da pizza, que já vem em uma forma cartonada própria para assar, colocar no formo e assionar o cronômetro que irá enviar uma notificação na hora de tirar a pizza!</p>
+
+        <br>
+
+        <p>Além disso, é muito fácil comprar! Você encontra no supermercado ou nos aplicativos de nossos parceiros, que você pode pedir e receber sem sair de casa.</p>
+
+        <br>
+
+        <h2>E para quem são esses kits?</h2>
+
+        <br>
+
+        <p>Para todos que procuram uma refeição diferenciada, para fazer em casa, de forma prática e rápida</p>
+
+        <br>
+
+        <p>São feitos para comer em família: pode preparar de diferentes formas dependendo do gosto de cada um</p>
+        <br>
+        <p>Para quem mora sozinho: pode preparar sem muito trabalho, e com necessidades mínimas!</p>
+        <br>
+        <p>Para reunir os amigos: está pensando em preparar uma refeição com os amigos e mostrar que você é o mestre cuca? Está é a opção perfeita! </p>
         <!--
         <div id="app">
             <h1 v-bind:title="title">{{ message }}</h1>
@@ -98,33 +148,34 @@ if ('serviceWorker' in navigator) {
     
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script>
-            var app = new Vue({
-                el: '#app',
-                data: {
-                message: 'Hello Vue!',
-                title:"manoela",
-                url:"",
-                url_tex:"",
-                todos:[
-                    {text:"gustavo"},
-                    {text:"garcia"},
-                    {text:"pereira"},
-                ]
-                },
-                methods:{
-                    contar:function(){
-                        //this.message = "gustavo"
-                        this.todos.push({text:this.message})
-                    },
-                    retirar_lista:function(){
-                        this.todos.pop({text:this.message})
-                    },
-                    visitar:function(){
-                        this.url_tex = this.url
-                    }
-                }
-            })
+//            var app = new Vue({
+//                el: '#app',
+//                data: {
+//                message: 'Hello Vue!',
+//                title:"manoela",
+//                url:"",
+//                url_tex:"",
+//                todos:[
+//                    {text:"gustavo"},
+//                    {text:"garcia"},
+//                    {text:"pereira"},
+//                ]
+//                },
+//                methods:{
+//                    contar:function(){
+//                        //this.message = "gustavo"
+//                        this.todos.push({text:this.message})
+//                    },
+//                    retirar_lista:function(){
+//                        this.todos.pop({text:this.message})
+//                    },
+//                    visitar:function(){
+//                        this.url_tex = this.url
+//                    }
+//                }
+//            })
         </script>
+        <script src="https://cdn.gravitec.net/storage/d79abbb381358e7d6cde58aba8a5f1aa/client.js" async></script>
 
     </body>
 </html>

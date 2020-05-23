@@ -1,15 +1,5 @@
 {
-  "name": "AgilePoker",
-  "short_name": "AgilePoker",
-  "theme_color": "#2a0044",
-  "background_color": "#2a0044",
-  "display": "standalone",
-  "start_url": "/",
-  "icons": [
-    {
-      "src": "img/logo.png",
-      "sizes": "72x72",
-      "type": "image/png"
-    }
-  ]
+  "name": "Gravitec SDK",
+  "gcm_sender_id": "330561634409",
+  "gcm_user_visible_only": true
 }
