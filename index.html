@@ -8,14 +8,12 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
         <title>Administração</title>
-        <link rel="manifest" href="/manifest.json">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;500&display=swap" rel="stylesheet"> 
-        <!-- CODELAB: Add link rel manifest -->
-        <link rel="manifest" href="./manifest.json">
+    
 
         <style>
             .container{
@@ -147,14 +145,14 @@
         <script src="" async defer></script>
         <script>
 // CODELAB: Register service worker.
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    //navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js')
-    navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js', {scope: '/pizzasmestrecuca/'})
-        .then((reg) => {
-          console.log('Service worker registered.', reg);
-        });
-  });
+//if ('serviceWorker' in navigator) {
+//  window.addEventListener('load', () => {
+//    //navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js')
+//    navigator.serviceWorker.register('/pizzasmestrecuca/service-worker.js', {scope: '/pizzasmestrecuca/'})
+//        .then((reg) => {
+//          console.log('Service worker registered.', reg);
+//        });
+//  });
 }
         </script>
 
