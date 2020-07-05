@@ -70,11 +70,11 @@
     -->
     <div class="container" >
         <audio controls autoplay>
-            <source src="/audio/pizza_mestre_cuca_ep_1.m4a" type="audio/mpeg">
+            <source src="audio/pizza_mestre_cuca_ep_1.m4a" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <audio controls autoplay>
-            <source src="/audio/pizza_mestre_cuca_ep_2.m4a" type="audio/mpeg">
+            <source src="audio/pizza_mestre_cuca_ep_2.m4a" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <h2>Você já pensou em preparar uma refeição saudável, prática, que seja rápida e do jeitinho que só você entende?</h2>
@@ -192,6 +192,26 @@ if ('serviceWorker' in navigator) {
 //            })
         </script>
         <script src="https://cdn.gravitec.net/storage/d79abbb381358e7d6cde58aba8a5f1aa/client.js" async></script>
-
+<!-- Início Do Código Do Player-->
+<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+<script type="text/javascript">
+MRP.insert({
+'url':'/audio/pizza_mestre_cuca_ep_1.m4a',
+'lang':'pt',
+'codec':'aac',
+'volume':65,
+'autoplay':true,
+'forceHTML5':true,
+'jsevents':true,
+'buffering':1,
+'title':'Rádio Maximum',
+'welcome':'Seja Bem Vindo',
+'wmode':'transparent',
+'skin':'cassette',
+'width':200,
+'height':120
+});
+</script>
+<!-- Final-->
     </body>
 </html>
